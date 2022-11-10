@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Student Name: Tsam Wong -->
+
+
+<head>
+    <title>Continuing Education</title>
+
+
+    <!--Do all the styling of your form using CSS rules saved in a separate .css style sheet.-->
+
+
+    <style type="text/css"></style>
+    <link href="assignment4.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div>
+
+<!--Create a banner (hint: use the header tag) containing a logo picture for the college and 
+hyperlink it to the college website-->
+
+
+<header>
+
+    <a href="https://www.centennialcollege.ca/"  target="_blank">
+    <img border="0" alt="continuing_education_banner" src="continuing_education_banner.png" width="980"></a>
+
+</header>
+
+
+<center>
+<h3>Centennial College</h3>
+<h4>Continuing Education Course/Instructor Evaluation</h4>
+</center>
+
+<hr>
+
+    
+<p>
+Please read each statement carefully and consider each one individually.<br>
+Give only one answer for each question. 
+</p>
+
+<hr><p>
+
+
+<form action="/action_page.php">
+
+    <p id="subtitle">Course</p>
+
+    <label for="coursename" id="part1">Course Name/Code: &nbsp;</label>
+    <input type="text" placeholder="Course Name" id="cname" name="cname" required><br><br>
+
+    <label for="sem">Semester: &nbsp;</label>
+
+    <input type="radio" id="fall" name="sem" value="fall" required>
+    <label for="fall">Fall</label>
+    
+    <input type="radio" id="winter" name="sem" value="winter" required>
+    <label for="winter">Winter</label>
+    
+    <input type="radio" id="springsummer" name="sem" value="springsummer" required>
+    <label for="springsummer">Spring/Summer</label>
+    
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+    <label for="Date">Date of filling the form: &nbsp;</label>
+    <input type="date" name="date" id="date" required><br><br>
+
+    <label for="instructor">Instructor: &nbsp;</label>
+    <input type="text" placeholder="Instructor" id="instructor" name="instructor" required><br><br>
+
+
+    <label for="gender">Gender:</label>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="NA">Not Prefer to Answer</option>
+    </select>
+
+
+
+<p id="subtitle">Instructor</p>
+
+    <p id="question">How would you rate the instructor's:</p>
+
+
+    1. <span id="highlight">knowledge </span>of the subject?<br>
+
+    <input type="radio" id="1excellent" name="knowledge" value="1excellent" required>
+    <label for="1excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="1good" name="knowledge" value="1good" required>
+    <label for="1good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="1fair" name="knowledge" value="1fair" required>
+    <label for="1fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="1notSatisfactory" name="knowledge" value="1notSatisfactory" required>
+    <label for="1notSatisfactory">Not Satisfactory</label><p>
+
+
+
+
+    2. <span id="highlight">helpfulness</span>?<br>
+
+    <input type="radio" id="2excellent" name="helpfulness" value="2excellent" required>
+    <label for="2excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="2good" name="helpfulness" value="2good" required>
+    <label for="2good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="2fair" name="helpfulness" value="2fair" required>
+    <label for="2fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="2notSatisfactory" name="helpfulness" value="2notSatisfactory" required>
+    <label for="2notSatisfactory">Not Satisfactory</label><p>
+
+
+
+
+    3. <span id="highlight">courtesy and respect </span>for all students?<br>
+
+    <input type="radio" id="3excellent" name="courtesy" value="3excellent" required>
+    <label for="3excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="3good" name="courtesy" value="3good" required>
+    <label for="3good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="3fair" name="courtesy" value="3fair" required>
+    <label for="3fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="3notSatisfactory" name="courtesy" value="3notSatisfactory" required>
+    <label for="3notSatisfactory">Not Satisfactory</label><p>
+
+
+       
+    4. <span id="highlight">communication </span>skills?<br>
+
+    <input type="radio" id="4excellent" name="communication" value="4excellent" required>
+    <label for="4excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="4good" name="communication" value="4good" required>
+    <label for="4good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="4fair" name="communication" value="4fair" required>
+    <label for="4fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="4notSatisfactory" name="communication" value="4notSatisfactory" required>
+    <label for="4notSatisfactory">Not Satisfactory</label><p>   
+
+
+
+
+    5. overall <span id="highlight">performance</span>?<br>
+
+    <input type="radio" id="5excellent" name="communication" value="5excellent" required>
+    <label for="5excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="5good" name="communication" value="5good" required>
+    <label for="5good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="5fair" name="communication" value="5fair" required>
+    <label for="5fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="5notSatisfactory" name="communication" value="5notSatisfactory" required>
+    <label for="5notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+<p id="subtitle">Course</p>
+
+
+    6. How would you rate the <span id="highlight">course materials</span>?<br>
+
+    <input type="radio" id="6excellent" name="communication" value="6excellent" required>
+    <label for="6excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="6good" name="communication" value="6good" required>
+    <label for="6good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="6fair" name="communication" value="6fair" required>
+    <label for="6fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="6notSatisfactory" name="communication" value="6notSatisfactory" required>
+    <label for="6notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+        
+    7. How much did this course meet your <span id="highlight">expectations</span>?<br>
+
+    <input type="radio" id="6excellent" name="communication" value="7excellent" required>
+    <label for="7excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="7good" name="communication" value="7good" required>
+    <label for="7good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="7fair" name="communication" value="7fair" required>
+    <label for="7fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="7notSatisfactory" name="communication" value="7notSatisfactory" required>
+    <label for="7notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+
+        
+    8. How would you rate this course (<span id="highlight">overall</span>)?<br>
+
+    <input type="radio" id="8excellent" name="communication" value="8excellent" required>
+    <label for="8excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="8good" name="communication" value="8good" required>
+    <label for="8good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="8fair" name="communication" value="8fair" required>
+    <label for="8fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="8notSatisfactory" name="communication" value="8notSatisfactory" required>
+    <label for="8notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+<p id="subtitle">General Information</p>
+
+    9. Was the <span id="highlight">course outline </span>reviewed/explained at the beginning of your course?<br>
+
+    <input type="radio" id="9excellent" name="communication" value="9excellent" required>
+    <label for="9excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="9good" name="communication" value="9good" required>
+    <label for="9good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="9fair" name="communication" value="9fair" required>
+    <label for="9fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="9notSatisfactory" name="communication" value="9notSatisfactory" required>
+    <label for="9notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+
+   10. Would you  <span id="highlight">course outline </span>reviewed/explained at the beginning of your course?<br>
+
+    <input type="radio" id="10excellent" name="communication" value="10excellent" required>
+    <label for="10excellent">Excellent</label>&nbsp;&nbsp;
+
+    <input type="radio" id="10good" name="communication" value="10good" required>
+    <label for="10good">Good</label>&nbsp;&nbsp;
+
+    <input type="radio" id="10fair" name="communication" value="10fair" required>
+    <label for="10fair">Fair</label>&nbsp;&nbsp;
+
+    <input type="radio" id="10notSatisfactory" name="communication" value="10notSatisfactory" required>
+    <label for="10notSatisfactory">Not Satisfactory</label><p> 
+
+
+
+<p id="subtitle">Any Other Comments</p>
+
+    <label for="bestthing">11. What is the <span id="highlight">best thing </span> about this course?&nbsp;</label>
+    <input type="text" id="bestthing" name="bestthing" size="50" required><br><br>
+
+    <label for="bestthing">12. How could we <span id="highlight">improve </span> about this course?&nbsp;</label>
+    <input type="text" id="bestthing" name="bestthing" size="50" required><br><br>
+    
+    <label for="bestthing">13. Other:&nbsp;</label>
+    <input type="text" id="bestthing" name="bestthing" size="100" required><br><br>
+
+
+    <label for="files">You may wish to upload files if necessary:</label>
+    <input type="file" id="files" name="files" multiple><br><br>
+
+
+    Do you want us to contact you?<br>
+    <input type="checkbox" id="contact" name="YesAM" value="YesAM">
+    <label for="YesAM">Yes, prefer morning time</label><br>
+
+    <input type="checkbox" id="contact" name="YesAM" value="YesAM">
+    <label for="YesAM">Yes, prefer afternoon time</label><br>
+
+    <input type="checkbox" id="contact" name="No" value="No">
+    <label for="No">No</label><br>
+
+
+
+    <p>
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+
+
+
+
+</form>
+
+    
+
+
+
+
+<p style="text-align:center; font-style: italic;">
+Thank you! We pay attention to your feedback! </p><br>
+
+
+<!--Make sure the website and email addresses on the sample form are implemented as 
+hyperlinks that the user can interact with.-->
+
+Web: <a href="www.centennialcollega.ca/continuing_education">www.centennialcollege.ca/continuing_education</a> &nbsp;&nbsp; E-mail: <a href="mailto: continuing_education@centennialcollege.ca">continuing_education@centennialcollege.ca</a>
+
+
+
+
+
+
+    
+<!--Copyright-->
+
+    <hr style="height:3px;border-width:0;color:rgb(63, 82, 120);background-color:rgb(63, 82, 120)">
+    <p style="font-size:10px">&copy;Copyright Tsam Wong, COMP 213 - Fall 2022<br></p>
+    
+</div>
+</body>
+</html>
