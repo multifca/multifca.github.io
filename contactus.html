@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Student Name: Tsam Wong -->
+
+
+<head>
+    <title>Centennial Property - Contact us</title>
+
+
+    <!--Do all the styling of your form using CSS rules saved in a separate .css style sheet.-->
+
+
+    <style type="text/css"></style>
+    <link href="project.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="maindiv">
+
+
+<header>
+
+     <img border="0" alt="banner" src="banner.gif" width="980">
+
+</header>
+
+
+<nav>
+    <a href="main.html">Home</a>&nbsp;&nbsp;
+    <a href="properties.html">Properties</a>&nbsp;&nbsp;
+    <a href="contactus.html">Contact Us</a>&nbsp;&nbsp;
+    <a href="sitemap.html">Site Map</a>
+    
+</nav>
+
+
+
+<h4>Contact us</h4>
+
+
+<hr>
+
+Tell us your preferences and the type of property you are interested in.<br>
+We will contact you shortly.<br>
+
+
+
+<!--The form should contain fields for the visitor’s 
+    first name, last name, phone, email, 
+    type of property (house or condominium), 
+    number of bedrooms, 
+    number of bathrooms, 
+    price range, 
+    and an additional comments text area. 
+    The information on the form is submitted by email to the agents’ email address-->
+
+
+
+
+<form action="mailto:samuel@centennialproperty.com">
+
+
+<p id="subtitle">Personal Information</p>
+
+    <label for="firstname" id="contactform">First Name: &nbsp;</label>
+    <input type="text" placeholder="First Name" id="fname" fame="cname" required><br><br>
+
+    <label for="lastname" id="contactform">Last Name: &nbsp;</label>
+    <input type="text" placeholder="Last Name" id="lname" fame="lname" required><br><br>
+
+    <label for="tel" id="contactform">Phone: &nbsp;</label>
+    <input type="tel" name="phone" id="Phone" required="required" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+
+    <label for="email" id="contactform">E-mail: &nbsp;</label>
+    <input type="email" name="email" id="email" required="required" placeholder="you@yourdomain.com"><p>
+
+
+
+
+<p id="subtitle">Target Property</p>
+
+
+1. <span id="highlight">Type of property: </span><br>
+
+    <input type="checkbox" id="type" name="House" value="House">
+    <label for="House">House</label><br>
+
+    <input type="checkbox" id="type" name="Condominium" value="Condominium">
+    <label for="Condominium">Condominium</label><br><br>
+
+    
+
+
+    <label for="type" id="contactform"> 2. Price Range: </label>
+    <select name="type" id="type">
+      <option value="under2500">Under $2,500</option>
+      <option value="2501-100000">$2,501 to $100,000</option>
+      <option value="100001-200000">$100,001 to $200,000</option>
+      <option value="200001-500000">$200,001 to $500,000</option>
+      <option value="500001-1000000">$500,001 to $1,000,000</option>
+      <option value="1000001up">Over $1,000,001</option>
+    </select><br><br>
+
+
+
+
+
+
+    <span id="highlight">3. Number of bedrooms: </span><br>
+
+    <input type="radio" id="1bedroom" name="bedroom" value="1bedroom" required>
+    <label for="1bedroom">1</label>&nbsp;&nbsp;
+
+    <input type="radio" id="2bedroom" name="bedroom" value="2bedroom" required>
+    <label for="2bedroom">2</label>&nbsp;&nbsp;
+
+    <input type="radio" id="3bedroom" name="bedroom" value="3bedroom" required>
+    <label for="3bedroom">3</label>&nbsp;&nbsp;
+
+    <input type="radio" id="4bedroom" name="bedroom" value="4bedroom" required>
+    <label for="4bedroom">4 or more</label><p>
+
+
+    <span id="highlight">4. Number of bathrooms: </span><br>
+
+    <input type="radio" id="1bathroom" name="bathroom" value="1bathroom" required>
+    <label for="1bathroom">1</label>&nbsp;&nbsp;
+
+    <input type="radio" id="2bathroom" name="bathroom" value="2bathroom" required>
+    <label for="2bathroom">2</label>&nbsp;&nbsp;
+
+    <input type="radio" id="3bathroom" name="bathroom" value="3bathroom" required>
+    <label for="3bathroom">3</label>&nbsp;&nbsp;
+
+    <input type="radio" id="4bathroom" name="bathroom" value="4bathroom" required>
+    <label for="4bathroom">4 or more</label><p>
+
+
+
+<p id="subtitle">Any other comments</p>
+
+    <label for="myComments" id="contactform">Comments:</label><br>
+    <textarea name="myComments" id="myComments" rows="10" cols="100" placeholder="Your Comments here"></textarea>
+
+
+
+
+
+
+
+    <p>
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+    
+<!--Copyright-->
+
+<hr>
+<p class="copyright">&copy;Copyright Tsam Wong, COMP 213 - Fall 2022<br></p>
+    
+</div>
+</body>
+</html>
